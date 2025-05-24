@@ -1,0 +1,91 @@
+/* style.css */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f5e1d6, #f7f3e9, #f5d9d6);
+    background-size: 400% 400%; /* 大きめのグラデーションでゆっくり動く */
+    animation: gradientAnimation 15s ease infinite; /* アニメーションを追加 */
+    color: #4b3832; /* 深みのあるブラウン */
+}
+
+/* グラデーションアニメーションのキー */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #3e2723; /* 濃いブラウン */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background-color: rgba(215, 204, 200, 0.8); /* 半透明で背景と馴染ませる */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid rgba(188, 170, 164, 0.8);
+}
+
+header h1 img {
+    max-width: 150px;
+}
+
+.header-navi ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-navi a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #4b3832;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.header-navi a:hover {
+    background-color: #bcaaa4;
+    border-color: #8d6e63; /* ダークブラウン */
+}
+
+.section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: rgba(255, 250, 240, 0.9); /* 半透明 */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    text-align: center;
+    color: #3e2723;
+    margin-bottom: 20px;
+}
+
+.footer-container {
+    background-color: rgba(215, 204, 200, 0.8);
+    padding: 20px 0;
+    text-align: center;
+    color: #4b3832;
+}
